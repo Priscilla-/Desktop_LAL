@@ -9,7 +9,7 @@ It's a good practice to create a Python [environment](https://conda.io/projects/
 ```bash
 conda create --name lalsuite
 ```
-When conda asks you to proceed, type y. You can list all discoverable environments with
+When conda asks you to proceed, type y. You check that your new environment has been created with
 
 ```bash
 conda info --envs
