@@ -40,7 +40,7 @@ The delicate part is that we need a different version of Astropy than the one pr
 ```bash
 conda install -c conda-forge astropy=5.3.1
 ```
-That's all regarding the Lalsuite installation. Now let's install some dependencies. To perform algebraic manipulations, including indexing, you need to install [numpy](https://anaconda.org/anaconda/numpy):
+That's all regarding the Lalsuite installation. Now let's install some dependencies. To perform algebraic manipulations, including indexing, you need to install [Numpy](https://anaconda.org/anaconda/numpy):
 ```bash
 conda install -c anaconda numpy 
 ```
