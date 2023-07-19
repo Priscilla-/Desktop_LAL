@@ -52,4 +52,4 @@ For plotting, you might like to install [Matplotlib](https://anaconda.org/conda-
 ```bash
 conda install -c conda-forge matplotlib
 ```
-That is all. I've provided a list of the packages and dependences in my current lalsuite working environment for further reference.
+That's all! I've provided a list of the packages and dependences in my current lalsuite working environment for further reference.
