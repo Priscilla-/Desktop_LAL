@@ -9,4 +9,49 @@ It's a good practice to create a Python [environment](https://conda.io/projects/
 ```bash
 conda create --name lalsuite
 ```
+When conda asks you to proceed, type y. You can list all discoverable environments with
 
+```bash
+conda info --envs
+```
+Next, you need to activate your environment to install the packages you need:
+
+'''bash
+conda activate lalsuite
+'''
+Once your environment is activated, you can install [LALsuite](https://anaconda.org/conda-forge/lalsuite)
+'''bash
+conda install -c conda-forge lalsuite
+'''
+and [Lalsimulation](https://anaconda.org/conda-forge/lalsimulation)
+
+'''bash
+conda install -c conda-forge lalsimulation
+'''
+Next, we install [Bilby](https://anaconda.org/conda-forge/bilby/):
+
+'''bash
+conda install -c conda-forge bilby
+'''
+and [HDF5](https://anaconda.org/anaconda/hdf5) to manage large files:
+'''bash
+conda install -c anaconda hdf5
+'''
+The delicate part is the following: we need a different version of Astropy than the one provided by default with the above installation. Then, to make things work, as per today, you need astropy version 5.3.1. To install this version you just need to type:
+
+'''bash
+conda install -c conda-forge astropy=5.3.1
+'''
+That's all regarding the Lalsuite installation. Now let's install some dependencies. To perform algebraic manipulations, including indexing, you need to install [numpy](https://anaconda.org/anaconda/numpy):
+'''bash
+conda install -c anaconda numpy 
+'''
+and it extension [Scipy](https://anaconda.org/anaconda/scipy)
+'''bash
+conda install -c anaconda scipy
+'''
+For plotting, you might like to install [Matplotlib](https://anaconda.org/conda-forge/matplotlib)
+'''bash
+conda install -c conda-forge matplotlib
+'''
+That is all. I've provided a list of the packages and dependences in my current lalsuite working environment for further reference.
